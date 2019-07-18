@@ -1,0 +1,38 @@
+git status                              показывает какие файлы не закоммичены. крысным - не добавленные в список для коммита
+git branch                              показывает список веток и текущую ветку
+git push <orig> :<br>                   удаляет ветку br в удалённом репозитории orig
+git branch -d <br>                      удаляет ветку br           
+git branch <br>                         создаёт ветку br           
+git checkout <br>                       переключается на ветку br (или версию с таким названием)
+git checkout <ver>^                     переключается на версию, предшествующую версии <ver> названием
+git checkout <hash>                     переключается на комит с хэшом hash
+git checkout <file>						возвращает файл в состояние, в котором он в комите
+git push <orig> <br>                    загружает ветку br в удалённом репозитории orig
+git commit -m "<comment>"               делает коммит с комментарием comment
+git add <file>                          добавить в коммит файл file
+git add -A                              добавить в коммит все файлы
+git reset HEAD <file>                   отменить add
+git reset --hard <tag>					отменяет комиты до версии tag (--hard обновляет каталог к новому head ветки)
+git tag -d <tag>						удаляет тэг
+git log                                 список комитов
+git log --pretty=oneline				компактнее
+git hist								мой git log
+git tag									просмотр списка именованных версий
+git tag <tag>							присвоение версии на которой сейчас находимся названия <tag>
+git hist master (--all)					просмотр истории
+git revert HEAD							отменяет последний комит (в истории видно)
+git revert <hash>						отменяет комит с хэшом hash
+git commit --amend -m "text"			перезапись комита
+git merge <br>							добавляет к текущей ветке ветку br
+git branch -a							показывает удалённые ветки
+git fetch								подтягивает изменения из удалённого репозитория
+git pull								git fetch + git merge original/master
+git branch --track <new> origin/<old>	создаёт локальную ветку, отслеживающую удалённую
+git branch -v							посмотреть последний коммит на каждой из веток
+git checkout -b <br>					создать и перейти на ветку br
+
+
+git init                                создать локальный репозиторий в текущей папке
+git remote                              просмотреть список коротких имён (в этой папке)
+git remote -v                           просмотреть список коротких имён со ссылками
+git remote add <orig> <url>             добавить короткое имя
