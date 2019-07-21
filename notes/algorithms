@@ -1,0 +1,35 @@
+быстрое возведение в степень
+бинарный поиск
+
+динамический массив
+	add / pushback
+		O(1) при достаточном размере
+		O(n) при изменении размера
+		амортизационное время ("среднее") - O(1)
+	at / GetAt / []
+	grow / resize
+связные списки
+	search
+	insert O(1)
+	delete O(1)
+стек
+	push
+	pop
+очередь
+	push
+	pop
+дек
+	PushBack
+	PushFront
+	PopBack
+	PopFront
+*стек, очередь и дек могут быть реализованы как на основе массива, так и на основе связных списков
+двоичная куча
+	SiftUp O(log n)
+	SiftDown O(log n)
+	BuildHeap O(n)
+	add O(log n)
+очередь с приоритетом
+	PopMax O(log n)
+	GetMax O(1)
+	add O(log n)
